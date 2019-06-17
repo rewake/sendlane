@@ -47,6 +47,8 @@ try {
 ```
 
 ## Add subscriber to a list
+
+<b>Object oriented call</b>
 ```
 try {
     
@@ -58,6 +60,29 @@ try {
         'email' => 'test@test.com',
         'list_id' => 1
     ]);
+    
+} catch (\Exception $e) {
+
+    // Echo error message
+    echo $e->getMessage();
+}
+```
+
+<b>Static call</b>
+```
+try {
+    
+    // Make static API call
+    SendlaneClient::api(
+        'subdomain',
+        'list-subscriber-add',
+        [
+            'key' => 'your-api-key',
+            'hash' => 'your-api-hash',
+            'email' => 'user@domain.com',
+            'list_id' => 1
+        ]
+    );
     
 } catch (\Exception $e) {
 
