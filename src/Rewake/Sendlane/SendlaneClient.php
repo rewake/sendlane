@@ -93,7 +93,7 @@ class SendlaneClient
     public function list_subscribers_add($data)
     {
         // Execute API call and return results
-        return $this->call('list-subscribers_add', $data);
+        return $this->call('list-subscribers-add', $data);
     }
 
     /**
