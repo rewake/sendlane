@@ -7,7 +7,7 @@ Some Notes:
 * This library throws exceptions, which should be handled by your application
 * You can use this library as an instantiated object or statically
 * Please see Sendlane's API documentation for more information on how their API works:
-https://help.sendlane.com/article/83-api-docs
+https://documenter.getpostman.com/view/7477734/S1TN5g5b?version=latest
 * I have a few instantiation tests in place, but will likely not have time to get around to writing more anytime soon 
 
 # Examples
